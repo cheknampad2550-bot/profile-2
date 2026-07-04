@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรไฟล์ส่วนตัว - สุภัสสรา เจ๊กนาม</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            max-width: 450px;
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .header-bg {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            height: 120px;
+        }
+
+        .avatar-container {
+            margin-top: -75px;
+            position: relative;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .profile-info {
+            padding: 25px;
+        }
+
+        .name {
+            font-size: 24px;
+            color: #333333;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .student-id {
+            font-size: 16px;
+            color: #0076a3;
+            font-weight: 600;
+            margin-bottom: 20px;
+            background: #e6f4ea;
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+
+        .details-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .details-table td {
+            padding: 10px 5px;
+            font-size: 15px;
+            color: #555555;
+            vertical-align: top;
+        }
+
+        .details-table td.label {
+            font-weight: 600;
+            color: #333333;
+            width: 30%;
+        }
+
+        .footer {
+            background-color: #f9f9f9;
+            padding: 15px;
+            font-size: 13px;
+            color: #888888;
+            border-top: 1px solid #eeeeee;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <!-- ส่วนหัวตกแต่ง -->
+        <div class="header-bg"></div>
+        
+        <!-- รูปโปรไฟล์ -->
+        <div class="avatar-container">
+            <!-- ดึงรูปภาพจากไฟล์ชื่อ รูปโปรไฟล์_4.jpg -->
+            <img src="รูปโปรไฟล์_4.jpg" alt="สุภัสสรา เจ๊กนาม" class="avatar">
+            <!-- หากต้องการใช้ลิงก์ออนไลน์แทน ให้ลบบรรทัดบน แล้วใช้โค้ดด้านล่างนี้แทนครับ -->
+            <!-- <img src="https://images.prodia.com/uploads/9b4bb5b6-7ad7-4e67-9d7a-1601a91e1d03.jpg" alt="สุภัสสรา เจ๊กนาม" class="avatar"> -->
+        </div>
+
+        <!-- ข้อมูลโปรไฟล์ -->
+        <div class="profile-info">
+            <h1 class="name">สุภัสสรา เจ๊กนาม</h1>
+            <p class="student-id">รหัสนักศึกษา: 694245018</p>
+            
+            <table class="details-table">
+                <tr>
+                    <td class="label">สาขา:</td>
+                    <td>วิทยาการคอมพิวเตอร์</td>
+                </tr>
+                <tr>
+                    <td class="label">คณะ:</td>
+                    <td>วิทยาศาสตร์และเทคโนโลยี</td>
+                </tr>
+                <tr>
+                    <td class="label">มหาวิทยาลัย:</td>
+                    <td>มหาวิทยาลัยราชภัฏหมู่บ้านจอมบึง</td>
+                </tr>
+                <tr>
+                    <td class="label">เบอร์โทร:</td>
+                    <td>092-497-2320</td>
+                </tr>
+                <tr>
+                    <td class="label">อีเมล:</td>
+                    <td><a href="mailto:cheknampad2550@gmail.com" style="color: #0076a3; text-decoration: none;">cheknampad2550@gmail.com</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- ส่วนท้าย -->
+        <div class="footer">
+            Student Profile Card © 2026
+        </div>
+    </div>
+
+</body>
+</html>
